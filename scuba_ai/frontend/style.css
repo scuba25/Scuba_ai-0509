@@ -1,0 +1,159 @@
+
+body {
+
+    font-family: sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh; # Make body take at least full viewport height
+
+}
+
+
+
+.chat-container {
+
+    width: 100%;
+
+    max-width: 600px; # Limit the maximum width of the chat interface
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 8px;
+
+    overflow: hidden; # Hide overflow when chat box exceeds max height
+
+    height: 80vh; # Give the chat container a fixed height
+
+}
+
+
+
+.chat-box {
+
+    flex-grow: 1; # Allow chat box to take up available space
+
+    padding: 15px;
+
+    overflow-y: auto; # Add scrollbar when content overflows
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+.message {
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    max-width: 80%; # Limit message width
+
+    word-wrap: break-word; # Wrap long words
+
+}
+
+
+
+.user-message {
+
+    align-self: flex-end; # Align user messages to the right
+
+    background-color: #007bff;
+
+    color: white;
+
+}
+
+
+
+.assistant-message {
+
+    align-self: flex-start; # Align assistant messages to the left
+
+    background-color: #e9e9eb;
+
+    color: #333;
+
+}
+
+
+
+.input-area {
+
+    display: flex;
+
+    padding: 15px;
+
+    border-top: 1px solid #eee;
+
+}
+
+
+
+.input-area input {
+
+    flex-grow: 1; # Allow input field to take up available space
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    margin-right: 10px;
+
+    font-size: 1rem;
+
+}
+
+
+
+.input-area button {
+
+    padding: 10px 20px;
+
+    background-color: #28a745;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+}
+
+
+
+.input-area button:hover {
+
+    background-color: #218838;
+
+}
+
