@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: scuba-ai-backend-container
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=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
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
